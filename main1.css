@@ -1,0 +1,234 @@
+/* Mặc định cho navbar khi đứng yên */
+.navbar {
+    padding: 0.5rem 1rem;
+    background-color: transparent; /* Trong suốt khi đứng yên */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển tiếp cho màu nền và màu chữ */
+    position: fixed; /* Đặt navbar cố định */
+    width: 100%; /* Đầy đủ chiều rộng */
+    z-index: 1000; /* Đặt lớp z-index để nằm trên video */
+    color: white; /* Màu chữ khi đứng yên */
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white; /* Màu chữ khi đứng yên */
+}
+
+/* Khi cuộn xuống */
+.navbar.scrolled {
+    background-color: white; /* Màu nền khi cuộn */
+    color: black; /* Màu chữ khi cuộn */
+}
+
+.navbar-brand img {
+    height: 60px; /* Tăng chiều cao của logo */
+    width: auto; /* Đảm bảo hình ảnh giữ tỷ lệ */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: inherit; /* Đảm bảo màu chữ của liên kết sẽ thừa hưởng màu chữ của navbar */
+}
+
+/* Đảm bảo màu chữ cho navbar-link khi cuộn */
+.navbar.scrolled .navbar-nav .nav-link {
+    color: black; /* Màu chữ khi cuộn */
+}
+
+.ml-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important; /* Đảm bảo không có khoảng cách giữa menu và nút Login/Sign Up */
+}
+
+/* Đảm bảo các nút Sign Up và Login sát lề phải */
+.auth-links {
+    margin-left: 0; /* Đảm bảo không có khoảng cách bên trái */
+    margin-right: 0; /* Đảm bảo không có khoảng cách bên phải */
+}
+
+.container {
+    max-width: 100%; /* Cho container giãn ra toàn bộ chiều rộng */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+
+.section-container {
+    padding: 50px 0;
+}
+
+.highlight-box {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #A6D6CE ;
+}
+
+.highlight-box i {
+    color: #A6D6CE;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.travel-image {
+    position: relative;
+    z-index: -1;
+}
+
+.travel-image img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
+}
+
+.section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sub-heading {
+    color: #6c757d;
+}
+footer{
+    margin-top: 150px ;
+}
+.card-text {
+    color: #007bff; /* Màu chữ cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.card-text:hover {
+    text-decoration: underline; /* Thêm gạch chân khi di chuột */
+}
+.card-img-top {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của khung */
+    height: 200px; /* Chiều cao cố định cho khung */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+.row-spacing .col {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+/* Video container */
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo video che phủ toàn bộ vùng */
+    position: absolute; /* Đảm bảo video bao phủ toàn bộ container */
+    top: 0;
+    left: 0;
+}
+
+/* Overlay cho form */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ bán trong suốt */
+}
+
+/* Form tìm kiếm */
+.search-form {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.2); /* Nền trắng bán trong suốt */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Đảm bảo form full width */
+    max-width: 800px; /* Giới hạn độ rộng tối đa */
+    margin-top: 160px;
+}
+
+.input-group .form-control {
+    height: 45px; /* Chiều cao của ô nhập liệu */
+}
+
+.input-group .btn {
+    height: 45px; /* Chiều cao của nút */
+    margin-left: 10px; /* Khoảng cách giữa ô nhập và nút */
+    background-color: #9bddd2;
+}
+.input-group .input-group-text {
+    height: 45px; /* Chiều cao của ô nhập liệu */
+    background-color: transparent; /* Nền trong suốt */
+    border: 2px solid #A6D6CE; /* Đường viền có màu (thay đổi màu sắc theo ý muốn) */
+    color:#A6D6CE;
+}
+#carouselExampleCaptions {
+    max-width: 1000px; 
+    margin: 0 auto;   
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  .carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+  }
+
+#foodcard img{
+    width: 100%; /* Ensures the image fills the entire width of its container */
+    height: 200px; /* Set a fixed height, adjust as needed */
+    object-fit: cover;
+}
+#foodcard .card-text{
+    color: rgb(97, 95, 95); 
+    text-decoration: none;
+}
+#vh-lh img{
+    width: 100%; /* Ensures the image fills the entire width of its container */
+    height: 300px; /* Set a fixed height, adjust as needed */
+    object-fit: cover;
+}
+#vh-lh .card-text {
+    color:  rgb(87, 87, 87) ;
+    text-decoration: none;
+}
+#vh-lh .card{
+    transition: transform 0.3s;/* Hiệu ứng chuyển động khi hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);/* Đổ bóng cho thẻ */
+    overflow: hidden;/* Ẩn phần nội dung ra ngoài */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Đường viền nhẹ */
+}
+#vh-lh .card:hover {
+    transform: translateY(-5px); /* Đẩy thẻ lên một chút khi hover */
+}
+
+.festival-image {
+    width: 100%; /* Đặt chiều rộng hình ảnh bằng chiều rộng thẻ */
+    height: auto; /* Chiều cao tự động */
+}
+
+
+
+

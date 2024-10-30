@@ -1,0 +1,114 @@
+
+.navbar {
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    color: #A6D6CE; /* Text color when the navbar is transparent */
+}
+
+.navbar-brand img {
+    height: 60px; 
+    width: auto; 
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: inherit;
+}
+
+/* Center navbar items */
+.navbar-nav.mx-auto {
+    justify-content: center;
+}
+
+/* Login/Sign Up Links */
+.ml-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.auth-links {
+    margin-left: 0;
+}
+
+/* Form section */
+.container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ECEFF1;
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    color: #A6D6CE;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+footer p, footer a {
+    color: #000;
+}
+
+footer hr {
+    background-color: #7c4dff;
+    height: 2px;
+    width: 60px;
+}
+/* Đảm bảo nội dung của body hoặc form bắt đầu bên dưới navbar */
+body, .form-container {
+    padding-top: 70px; /* Điều chỉnh theo chiều cao của navbar */
+}
+
+/* Các kiểu của navbar */
+.navbar {
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0; /* Đảm bảo navbar nằm ở trên cùng */
+    width: 100%;
+    z-index: 1000; /* Đảm bảo navbar luôn ở trên các nội dung khác */
+    color: #A6D6CE; /* Màu chữ khi navbar trong suốt */
+}
+/* Đảm bảo nội dung không bị che bởi navbar */
+body {
+    padding-top: 70px;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #A6D6CE;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.auth-links .nav-link {
+    color: #007bff;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.map-image {
+    position: relative;
+    z-index: -1;
+}
+
+.map-image img {
+    width: 100%;
+    max-width: 600px;
+    height: 550px;
+}
+
